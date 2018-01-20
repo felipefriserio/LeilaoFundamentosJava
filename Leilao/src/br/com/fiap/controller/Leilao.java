@@ -79,7 +79,7 @@ public class Leilao {
 				finalizarLeilao();
 			};
 
-			Thread thread = new Thread(cronometro);
+			Thread thread = new Thread(cronometro, "Cronometro Leilao");
 			thread.start();
 		}
 	}
